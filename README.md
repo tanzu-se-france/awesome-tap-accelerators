@@ -22,7 +22,7 @@ accelerator:
   managed_resources:
     enable: true
     git:
-      url: https://github.com/alexandreroman/awesome-tap-accelerators
+      url: https://github.com/tanzu-se-france/awesome-tap-accelerators
       sub_path: accelerators
       ref: origin/main
 ```

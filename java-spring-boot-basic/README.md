@@ -6,7 +6,7 @@ to serve a [Bootstrap](https://getbootstrap.com/) backed UI.
 ![Screenshot of the application](app.png)
 
 This template is a stripped down version of the
-[Awesome Spring Boot Accelerator](https://github.com/alexandreroman/awesome-tap-accelerators/tree/main/java-spring-boot).
+[Awesome Spring Boot Accelerator](https://github.com/tanzu-se-france/awesome-tap-accelerators/tree/main/java-spring-boot).
 
 It only serves a web UI and a simple REST API.
 
