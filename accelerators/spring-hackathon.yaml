@@ -1,10 +1,10 @@
 apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
-  name: awesome-java-spring-boot-basic
+  name: spring-hackathon
 spec:
   git:
     ref:
       branch: main
-    url: https://github.com/alexandreroman/awesome-tap-accelerators
+    url: https://github.com/tanzu-se-france/spring-hackathon.git
     subPath: java-spring-boot-basic
