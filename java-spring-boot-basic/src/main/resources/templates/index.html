@@ -77,12 +77,14 @@
           <a class="btn btn-outline-secondary" target="_" role="button"
              href="https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/getting-started-about-consuming-services.html">
             Consume services</a>
+          <a class="btn btn-outline-secondary" target="_" role="button" th:href="@{/kill}">Shut down this instance</a>
         </div>
         <div th:unless="${app.runningInKubernetes}">
           <p>Use VMware Tanzu Application Platform to deploy this app to Kubernetes.</p>
           <a class="btn btn-outline-secondary" target="_" role="button"
              href="https://docs.vmware.com/en/VMware-Tanzu-Application-Platform/1.7/tap/getting-started-deploy-first-app.html">
             Deploy your first app</a>
+          <a class="btn btn-outline-secondary" target="_" role="button" th:href="@{/kill}">Shut down this instance</a>
         </div>
       </div>
     </div>
