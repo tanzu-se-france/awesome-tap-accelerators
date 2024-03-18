@@ -20,9 +20,6 @@ accelerator:
     label: Application root package
     required: true
 
-  imports:
-  - name: tap-workload
-
 engine:
   let:
   - name: workloadResourceName
@@ -76,9 +73,3 @@ engine:
         substitutions:
         - text: "com.vmware.tanzu"
           with: "#packageName"
-
-  - merge:
-    - type: InvokeFragment
-      reference: tap-workload
-    - include: [ "**" ]
-    onConflict: UseFirst
