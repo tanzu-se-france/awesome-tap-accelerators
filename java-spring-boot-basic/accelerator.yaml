@@ -56,8 +56,8 @@ engine:
 
   - merge:
     - include: [ "**" ]
-      exclude: [ "config/workload.yaml", "catalog/catalog-info.yaml", "Tiltfile", "src/main/resources/application.yaml" ]
-    - include: [ "config/workload.yaml", "catalog/catalog-info.yaml", "Tiltfile", "src/main/resources/application.yaml" ]
+      exclude: [ "config/workload.yaml", "Tiltfile", "src/main/resources/application.yaml" ]
+    - include: [ "config/workload.yaml", "Tiltfile", "src/main/resources/application.yaml" ]
       chain:
       - type: ReplaceText
         substitutions:
