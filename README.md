@@ -33,6 +33,16 @@ The new accelerators should be available in your TAP instance:
 
 Have fun!
 
+## Integration with Tanzu Academy
+
+```sh
+# Run form the Terminal Tab
+kubectl apply -n accelerator-system -f https://raw.githubusercontent.com/tanzu-se-france/spring-hackathon/main/accelerators/spring-hackathon.yaml
+
+# Check status
+kubectl get Accelerator -n accelerator-system
+```
+
 ## Contribute
 
 Contributions are always welcome!
