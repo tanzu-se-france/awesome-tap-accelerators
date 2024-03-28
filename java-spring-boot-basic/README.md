@@ -18,7 +18,7 @@ Bienvenue dans le Spring Hackathon dédié au Ministère des Armées !
 
 * Si vous n'en avez pas déjà, créer un compte [VMware Customer Connect](https://customerconnect.vmware.com/account-registration)
 * Se connecter sur [VMware Customer Connect](https://customerconnect.vmware.com/login)
-* Se connecter sur la [Tanzu Academy](https://tanzu.academy/) an utilisant le compte créé précédemment
+* Se connecter sur la [Tanzu Academy](https://tanzu.academy/) en utilisant le compte créé précédemment
 * Accéder au Lab dédié [ici](https://tanzu.academy/guides/tap-freeform/lab)
 
 ## Initialiser votre Application

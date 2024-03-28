@@ -2,6 +2,7 @@ apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
   name: spring-hackathon
+  namespace: accelerator-system
 spec:
   git:
     ref:
