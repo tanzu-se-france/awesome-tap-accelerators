@@ -8,3 +8,5 @@ server:
 app:
   hello:
     greetings: Hello %s!
+  services:
+    todos: https://jsonplaceholder.typicode.com/todos
