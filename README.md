@@ -43,6 +43,9 @@ kubectl apply -n accelerator-system -f https://raw.githubusercontent.com/tanzu-s
 kubectl get Accelerator -n accelerator-system
 ```
 
+Register Catalog
+* Portal > Register Entity > https://github.com/tanzu-se-france/spring-hackathon/blob/main/catalog/catalog-info.yaml
+
 ## Contribute
 
 Contributions are always welcome!

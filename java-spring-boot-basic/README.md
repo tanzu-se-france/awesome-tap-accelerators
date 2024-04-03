@@ -19,7 +19,7 @@ Bienvenue dans le Spring Hackathon dédié au Ministère des Armées !
 * Si vous n'en avez pas déjà, créer un compte [VMware Customer Connect](https://customerconnect.vmware.com/account-registration)
 * Se connecter sur [VMware Customer Connect](https://customerconnect.vmware.com/login)
 * Se connecter sur la [Tanzu Academy](https://tanzu.academy/) en utilisant le compte créé précédemment
-* Accéder au Lab dédié [ici](https://tanzu.academy/guides/tap-freeform/lab)
+* Accéder au Lab dédié [ici](https://tanzu.academy/guides/tap-freeform)
 
 ## Initialiser votre Application
 
@@ -27,7 +27,7 @@ Bienvenue dans le Spring Hackathon dédié au Ministère des Armées !
 * Cliquer sur l'icône Tanzu App Accelerator
 * Sélectionner `Spring Hackathon`
 * Dans `project-name` mettez votre nom d'équipe
-* Next Step > Generate Project > Valider tous les paramètres par défaut
+* Next Step > Generate Project > Valider tous les paramètres par défaut _(cliquer sur Ok)_
 * Cliquer sur `No` sur toutes les Popups qui s'ouvriront
 
 Votre application est initialisée !
@@ -42,28 +42,28 @@ Votre application est initialisée !
 * Se rendre dans l'onglet `Terminal` et tester que votre application est fonctionnelle
 
 ```shell
-http localhost:8080/actuator/health
+http localhost:8080/hello
 ```
 
-* Se rendre dans l'onglet `Editor` et arrêter l'application avec `Ctrl+c`
+* Se rendre dans l'onglet `Editor` et arrêter l'application avec `Ctrl+c`, ou cliquer sur l'icône de fermeture de Terminal _(poubelle)_
 
 ## Déployer votre Application dans Kubernetes
 
-* Se rendre dans l'onglet `Terminal` ou depuis le Terminal de l'Editor
+* Se rendre dans le l'onglet `Terminal`
 
 ```shell
-# Move to the good folder
-cd <your_app_path> # Should be under /home/eduk8s/
+# Se déplacer dans le bon dossier
+cd <your_app_path> # Doit être sous /home/eduk8s/
 
-# Deploy the App
+# Déployer l'Application
 tanzu apps workload apply --file ./config/workload.yaml --local-path . --update-strategy replace
 
-# Follow Status - Use the name of your App !
+# Suivre le statut - Utilisez le nom de votre App !
 tanzu apps workload get spring-hackathon
 tanzu apps workload tail spring-hackathon --timestamp --since 1h
 ```
 
-* Attendre que votre Application soit déployée
+* Attendre que votre Application soit déployée _(la première fois, cela peut prendre environ 5 minutes)_
 * Récupérer l'url de votre Application
 
 ```shell
@@ -75,6 +75,8 @@ tanzu apps workload get spring-hackathon
 * Renseigner cette url dans le [formulaire d'inscription d'équipe](https://docs.google.com/forms/d/e/1FAIpQLSdSvywAeJG8FpwL8718BDbUp8AsIzyQY_j9WaNa5r2emm9UqQ/viewform)
 
 > 🚀 Félicitations vous venez de réaliser avec succès la première étape !
+
+> 🎁 Faites signe aux organisateurs pour comptabiliser vos points bonus.
 
 * Vous pouvez supprimer le déploiement de votre application si vous le souhaitez.
 
@@ -94,21 +96,23 @@ Vous allez devoir développer une API qui retourne la somme de deux entiers.
 
 * L'API à la signature suivante: `/calc/add?a=int1&b=int2`
 * Elle répond sur `/calc/add`
-* Prend en paramètre deux entiers de type `int` sous les paramètres `a` et `b`
-* Elle retourne un résultat au format JSON avec le format suivant :
+* Prend en paramètre deux entiers sous les paramètres a et b
+* Elle retourne un résultat au format json avec le format suivant :
 
 ```json
 {"value":35}
 ```
+
+> 🎁 Faites signe aux organisateurs pour comptabiliser vos points bonus.
 
 ### Consommation d'un API externe
 
 Vous allez développer un API qui va récupérer des informations depuis un site externe.
 
 * L'API à la signature suivante: `/todos/{todoId}`
-* Prend en paramètre un identifiant de tâche (entier de type `long`) représenté par `todoId`
+* Prend en paramètre un identifiant de tâche représenté par `{todoId}`
 * Va récupérer les informations depuis https://jsonplaceholder.typicode.com/todos/{todoId}
-* Retourne le résulat tel que lu sur l'API externe sous forme de `String`
+* Retourne le résulat tel que lu sur l'API externe sous forme de String
 
 ```json
 {
@@ -118,3 +122,5 @@ Vous allez développer un API qui va récupérer des informations depuis un site
   "completed": false
 }
 ```
+
+> 🎁 Faites signe aux organisateurs pour comptabiliser vos points bonus.
