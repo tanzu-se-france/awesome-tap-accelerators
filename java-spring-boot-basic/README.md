@@ -94,8 +94,8 @@ Vous allez devoir développer une API qui retourne la somme de deux entiers.
 
 * L'API à la signature suivante: `/calc/add?a=int1&b=int2`
 * Elle répond sur `/calc/add`
-* Prend en paramètre deux entiers sous les paramètres a et b
-* Elle retourne un résultat au format json avec le format suivant :
+* Prend en paramètre deux entiers de type `int` sous les paramètres `a` et `b`
+* Elle retourne un résultat au format JSON avec le format suivant :
 
 ```json
 {"value":35}
@@ -106,9 +106,9 @@ Vous allez devoir développer une API qui retourne la somme de deux entiers.
 Vous allez développer un API qui va récupérer des informations depuis un site externe.
 
 * L'API à la signature suivante: `/todos/{todoId}`
-* Prend en paramètre un identifiant de tâche représenté par `{todoId}`
+* Prend en paramètre un identifiant de tâche (entier de type `long`) représenté par `todoId`
 * Va récupérer les informations depuis https://jsonplaceholder.typicode.com/todos/{todoId}
-* Retourne le résulat tel que lu sur l'API externe sous forme de String
+* Retourne le résulat tel que lu sur l'API externe sous forme de `String`
 
 ```json
 {
@@ -118,4 +118,3 @@ Vous allez développer un API qui va récupérer des informations depuis un site
   "completed": false
 }
 ```
-
